@@ -172,6 +172,17 @@ small {
     box-shadow: none;
 }
 
+.btn-outline-primary {
+    color: #3e668e !important;
+    border-color: #3e668e !important;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+    color: #ffffff !important;
+    background-color: #3e668e !important;
+}
+
 @media only screen and (min-width: 992px) {
     .btn-primary {
         height: 40px;
@@ -804,11 +815,11 @@ div.header-box table > tbody > tr > td:nth-of-type(2) {
     background-image: url('../images/icon_lipidologie_active.svg');
 }
 
-#leistungen h5 {
+#leistungen .col-12 > h5 {
     position: absolute;
     display: inline;
     height: 30px;
-    width: 200px;
+    width: 220px;
     top: -15px;
     left: 0;
     font-size: 15px;
@@ -856,6 +867,38 @@ div.header-box table > tbody > tr > td:nth-of-type(2) {
 
     #leistungen a[aria-controls="leistung-lipidologie-tab-pane"]:before {
         background-image: url('../images/icon_lipidologie_active.svg') ;
+    }
+}
+
+#leistungen .container.bg-primary {
+    bottom: 0;
+    background: url('../images/dk_leistungen_background.png') bottom center no-repeat;
+    background-size: 75%;
+}
+
+@media only screen and (min-width: 768px) {
+    #leistungen .container.bg-primary {
+        background-size: 55%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #leistungen .container.bg-primary {
+        background-size: 35%;
+    }
+}
+
+#leistungen .beratung {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 25px;
+    line-height: 40px;
+}
+
+@media only screen and (min-width: 992px) {
+    #leistungen .beratung {
+        font-size: 35px;
+        line-height: 50px;
     }
 }
 
@@ -977,6 +1020,33 @@ div.header-box table > tbody > tr > td:nth-of-type(2) {
     }
 }
 
+/* Zuweiser */
+#zuweiser h5 {
+    position: absolute;
+    display: inline;
+    height: 30px;
+    width: 180px;
+    top: -15px;
+    left: 0;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #3e668e;
+}
+
+#zuweiser .col-lg-3.border-end {
+    border-right: none !important;
+}
+
+@media only screen and (min-width: 992px) {
+    #zuweiser .col-lg-3.border-end {
+        border-right: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)!important;
+    }
+}
+
 /* Jobs */
 #karriere .card h5 {
     position: absolute;
@@ -1000,6 +1070,72 @@ div.header-box table > tbody > tr > td:nth-of-type(2) {
         left: 0;
         margin-left: auto;
     }
+}
+
+/* Kardio Fit */
+#kardio-fit .card h5 {
+    position: absolute;
+    display: inline;
+    margin-left: -90px;
+    height: 30px;
+    width: 180px;
+    top: -15px;
+    left: 50%;
+    font-size: 15px;
+    line-height: 10px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #3e668e;
+}
+
+@media only screen and (min-width: 992px) {
+    #kardio-fit .card h5 {
+        left: 0;
+        margin-left: auto;
+    }
+}
+
+#kardio-fit li {
+    padding-left: 1rem;
+}
+
+#kardio-fit li::before {
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    color: #e7333f;
+    content: '•';
+}
+
+#kardio-fit .experten {
+    font-size: 25px;
+    line-height: 40px;
+}
+
+@media only screen and (min-width: 992px) {
+    #kardio-fit .experten {
+        font-size: 35px;
+        line-height: 50px;
+    }
+}
+
+#kardio-fit a.collapse-button:before {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url('../images/icon_download_inactive.svg') no-repeat;
+    background-size: 30px 30px;
+    vertical-align: middle;
+    content: '';
+}
+
+#kardio-fit a.collapse-button:hover:before,
+#kardio-fit a.collapse-button:active:before,
+#kardio-fit a.collapse-button:focus:before {
+    background-image: url('../images/icon_download_active.svg');
 }
 
 /* Imrint */
