@@ -173,6 +173,14 @@ small {
 }
 
 .btn-outline-primary {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 50px;
+    font-size: 15px;
+    line-height: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 50px;
     color: #3e668e !important;
     border-color: #3e668e !important;
 }
@@ -870,21 +878,74 @@ div.header-box table > tbody > tr > td:nth-of-type(2) {
     }
 }
 
+#leistungen .logo-kardio-fit {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    right: 10px;
+    bottom: -30px;
+}
+
+@media only screen and (min-width: 380px) {
+    #leistungen .logo-kardio-fit {
+        height: 110px;
+        width: 110px;
+        right: 15px;
+        bottom: -55px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #leistungen .logo-kardio-fit {
+        height: 140px;
+        width: 140px;
+        right: 20px;
+        bottom: -70px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #leistungen .logo-kardio-fit {
+        height: 80px;
+        width: 80px;
+        right: 10px;
+        bottom: -40px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #leistungen .logo-kardio-fit {
+        height: 110px;
+        width: 110px;
+        right: 15px;
+        bottom: -55px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    #leistungen .logo-kardio-fit {
+        height: 140px;
+        width: 140px;
+        right: 20px;
+        bottom: -70px;
+    }
+}
+
 #leistungen .container.bg-primary {
     bottom: 0;
-    background: url('../images/dk_leistungen_background.png') bottom center no-repeat;
-    background-size: 75%;
+    background: url('../images/dk_leistungen_background.svg') bottom center no-repeat;
+    background-size: 100%;
 }
 
 @media only screen and (min-width: 768px) {
     #leistungen .container.bg-primary {
-        background-size: 55%;
+        background-size: 80%;
     }
 }
 
 @media only screen and (min-width: 992px) {
     #leistungen .container.bg-primary {
-        background-size: 35%;
+        background-size: 60%;
     }
 }
 
