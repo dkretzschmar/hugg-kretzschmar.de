@@ -891,10 +891,11 @@ div.header-box table > tbody > tr > td:nth-of-type(2) {
 #leistungen .col-12 > h5 {
     position: absolute;
     display: inline;
+    margin-left: -110px;
     height: 30px;
     width: 220px;
     top: -15px;
-    left: 0;
+    left: 50%;
     font-size: 15px;
     line-height: 30px;
     font-weight: 500;
@@ -1150,10 +1151,11 @@ div.header-box table > tbody > tr > td:nth-of-type(2) {
 #zuweiser h5 {
     position: absolute;
     display: inline;
+    margin-left: -90px;
     height: 30px;
     width: 180px;
     top: -15px;
-    left: 0;
+    left: 50%;
     font-size: 15px;
     line-height: 30px;
     letter-spacing: 1px;
