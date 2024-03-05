@@ -199,6 +199,59 @@ small {
     }
 }
 
+.link-primary {
+    color: #e7333f !important;
+}
+
+.link-primary:hover,
+.link-primary:focus {
+    color: #cb2a34 !important;
+}
+
+button.terminservice {
+    display: block;
+    padding: 0;
+    width: 100%;
+    height: 40px;
+    color: #ffffff;
+    background-color: #e7333f;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 40px;
+    border: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+button.terminservice:hover,
+button.terminservice:focus {
+    background-color: #cb2a34;
+}
+
+button.terminservice img {
+    margin-top: -3px;
+}
+
+@media only screen and (min-width: 992px) {
+    .offcanvas + button.terminservice  {
+        position: absolute;
+        top: 120px;
+        right: -80px;
+        width: 200px;
+        transform: rotate(90deg);;
+    }
+
+    .offcanvas.show + button.terminservice {
+        display: none;
+    }
+
+    .offcanvas {
+        top: 100px !important;
+        bottom: auto;
+        height: fit-content;
+    }
+}
+
 em {
     font-style: normal;
 }
@@ -355,13 +408,18 @@ nav.navbar .navbar-collapse {
     color: #ffffff !important;
 }
 
-.navbar-light .navbar-toggler {
+.navbar-toggler {
+    position: absolute;
+    top: 15px;
+    right: 40px;
+    font-size: 30px;
     background-color: transparent !important;
     border: none;
     color: #35587a;
+    z-index: 10;
 }
 
-.navbar-light .navbar-toggler-icon {
+.navbar-toggler-icon {
     background-image: url('data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Ebene_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%2060%2050%22%20style%3D%22enable-background%3Anew%200%200%2060%2050%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E.st0%7Bfill%3Anone%3Bstroke%3A%23325D8D%3Bstroke-width%3A2%3Bstroke-linecap%3Around%3B%7D%3C%2Fstyle%3E%3Cg%20id%3D%22Gruppe_484%22%20transform%3D%22translate%2812.021%20-9.192%29%20rotate%2845%29%22%3E%3Cline%20id%3D%22Linie_19%22%20class%3D%22st0%22%20x1%3D%2247.5%22%20y1%3D%221.2%22%20x2%3D%2226.3%22%20y2%3D%2222.4%22%2F%3E%3C%2Fg%3E%3Cg%20id%3D%22Gruppe_484_00000049935562156961335410000010139819430374773151_%22%20transform%3D%22translate%2812.021%20-9.192%29%20rotate%2845%29%22%3E%3Cline%20id%3D%22Linie_19_00000166666575514607237410000018293046572909026991_%22%20class%3D%22st0%22%20x1%3D%2239.8%22%20y1%3D%22-6.6%22%20x2%3D%2218.5%22%20y2%3D%2214.6%22%2F%3E%3C%2Fg%3E%3Cg%20id%3D%22Gruppe_484_00000093868228161006749770000002752661831201694620_%22%20transform%3D%22translate%2812.021%20-9.192%29%20rotate%2845%29%22%3E%3Cline%20id%3D%22Linie_19_00000028301074646662457240000003870095184803366805_%22%20class%3D%22st0%22%20x1%3D%2255.2%22%20y1%3D%228.9%22%20x2%3D%2234%22%20y2%3D%2230.1%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E%0A');
 }
 

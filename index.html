@@ -32,6 +32,17 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 <body>
+    <div class="d-lg-none">
+        <button class="terminservice" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-terminservice" aria-expanded="false" aria-controls="collapse-terminservice">
+            <img src="assets/images/icon_terminservice.svg" width="13" height="13" alt="Plus" class="me-2"> Terminservice
+        </button>
+        <div class="collapse" id="collapse-terminservice">
+            <div class="card card-body border-0">
+                <p>Für dringende Termine können Sie den <a href="https://www.116117-termine.de" class="link-primary" target="_blank">116117-Terminservice</a> nutzen. Täglich sind hierfür Zeitfenster in unserer Praxis reserviert, die Sie direkt über die 116117 Website oder die 116117 App buchen können. Bitte halten Sie dafür den Dringlichkeitscode Ihrer Überweisung bereit.</p>
+                <p class="mb-0">→ <a href="https://www.116117-termine.de" target="_blank">Zur Website</a></p>
+            </div>
+        </div>
+    </div>
     <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container">
             <div class="navbar-contact d-none d-lg-flex">
@@ -44,9 +55,6 @@
                     <span>praxis@hugg-kretzschmar.de</span>
                 </a>
             </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
             <div id="navbar-collapse" class="collapse navbar-collapse">
                 <div class="d-lg-none">
                      <div class="navbar-close" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
@@ -64,14 +72,35 @@
             </div>
         </div>
     </nav>
-    <article>
+    <article class="position-relative">
         <section id="header">
+            <div class="d-none d-lg-block">
+                <div class="offcanvas offcanvas-end border-0" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvas" aria-labelledby="offcanvas">
+                    <div class="offcanvas-header m-0 p-0">
+                        <button class="terminservice" type="button" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <img src="assets/images/icon_terminservice.svg" width="13" height="13" alt="Plus" class="me-2"> Terminservice
+                        </button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <p class="mb-0">Für dringende Termine können Sie den <a href="https://www.116117-termine.de" class="link-primary" target="_blank">116117-Terminservice</a> nutzen. Täglich sind hierfür Zeitfenster in unserer Praxis reserviert, die Sie direkt über die 116117 Website oder die 116117 App buchen können. Bitte halten Sie dafür den Dringlichkeitscode Ihrer Überweisung bereit.</p>
+                        <hr class="my-3">
+                        <p class="mb-0"><img src="assets/images/icon_web.svg" width="40" height="40" alt="Plus" class="me-2"> → <a href="https://www.116117-termine.de" target="_blank">Zur Website</a></p>
+                        <hr class="my-3">
+                    </div>
+                </div>
+                <button class="terminservice" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
+                    <img src="assets/images/icon_terminservice.svg" width="13" height="13" alt="Plus" class="me-2"> Terminservice
+                </button>
+            </div>
             <div class="container mw-100 bg-gray">
                 <div class="row">
                     <div class="col">
                         <div class="container">
                             <div class="row">
                                 <div class="col position-relative">
+                                    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
                                     <picture>
                                         <source media="(min-width: 992px)" srcset="./assets/images/dk_header_home.png">
                                         <source srcset="./assets/images/dk_header_home_sm.png">
