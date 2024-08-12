@@ -1084,9 +1084,11 @@ div.header-box table > tbody > tr > td:nth-of-type(2) {
 }
 
 @media only screen and (min-width: 992px) {
+    /*
     #team .container-team {
         margin-top: -140px;
     }
+    */
 
     #team > .container:last-of-type {
         margin-top: -70px;
