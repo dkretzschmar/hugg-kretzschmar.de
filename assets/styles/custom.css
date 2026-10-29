@@ -787,6 +787,60 @@ div.header-box table > tbody > tr > td:nth-of-type(2) {
 }
 
 /* News */
+#news .news-info-label {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    padding: 0 15px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: #ffffff;
+    background-color: #e7333f;
+    transform: translateX(-50%);
+}
+
+#news .news-info-title {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #35587a;
+}
+
+#news .news-info-toggle {
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: url('../images/icon_plus.svg') no-repeat center center;
+    background-size: 30px 30px;
+    transform: translateX(-50%);
+}
+
+#news .news-info-toggle[aria-expanded="true"] {
+    background-image: url('../images/icon_minus.svg');
+}
+
+#news .news-info-toggle:focus-visible {
+    outline: 2px solid #35587a;
+    outline-offset: 4px;
+}
+
+#news .news-info-link {
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(51, 85, 115, 0.3);
+}
+
 #news .card li::before {
     display: inline-block;
     width: 1em;
@@ -795,8 +849,16 @@ div.header-box table > tbody > tr > td:nth-of-type(2) {
     content: '';
 }
 
+#news .news-info li::before {
+    content: '•';
+}
 
 @media only screen and (min-width: 992px) {
+    #news .news-info-title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
     #news .card li::before {
         content: '•';
     }
