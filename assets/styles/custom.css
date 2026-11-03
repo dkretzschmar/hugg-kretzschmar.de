@@ -838,7 +838,10 @@ div.header-box table > tbody > tr > td:nth-of-type(2) {
     line-height: 24px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    border-bottom: 1px solid rgba(51, 85, 115, 0.3);
+    text-decoration: underline;
+    text-decoration-color: rgba(51, 85, 115, 0.3);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
 }
 
 #news .card li::before {
